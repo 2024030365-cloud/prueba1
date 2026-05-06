@@ -28,11 +28,8 @@ class AuthController extends Controller
     }
 
     public function usuario() {
-        return response()->json(auth('api')->user());
-    }
+    return response()->json(auth('api')->user());
+}
 
-    public function logout() {
-        auth('api')->logout();
-        return response()->json(['message' => 'Logged out']);
-    }
+   
 }
